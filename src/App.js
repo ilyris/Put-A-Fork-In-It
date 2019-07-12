@@ -16,7 +16,7 @@ const App = () => {
     fetchApiCall();
   }
   const fetchApiCall = ()  => {
-    fetch(`http://api.edamam.com/search?q=${searchfield}&app_id=4298945d&app_key=ad5979247966b4cff1201bbc13ff7be6`)
+    fetch(`https://api.edamam.com/search?q=${searchfield}&app_id=4298945d&app_key=ad5979247966b4cff1201bbc13ff7be6`)
     .then( response =>  {
       return response.json();
 
