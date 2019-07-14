@@ -1,63 +1,21 @@
-// import React, { Component } from 'react';
-// import './App.css';
-// import SearchBox from "./componets/SearchBox";
 
-// class App extends Component {
-//   constructor() {
-//     super();
-//     this.state = {
-//       searchfield: '',
-//       recipes: []
-//     }
-//   }
-
-// searchChange = event => {
-//     this.setState({searchfield: event.target.value});
-//   } 
-
-// submitUsersRecipe = (event) =>  {
-//     event.preventDefault();
-//     return this.fetchApiCall();
-//   }
-// fetchApiCall = ()  => {
-//     fetch(`https://api.edamam.com/search?q=${this.state.searchfield}&app_id=4298945d&app_key=ad5979247966b4cff1201bbc13ff7be6`)
-//     .then( response =>  {
-//       return response.json();
-
-//     })
-//     .then( recipes =>  {
-//       console.log(recipes);
-//       this.setState({recipes: recipes});
-//     }
-//       );
-//   }
-//   render() {
-//     return (
-//       <div>
-//         <h1 id="companyName">Put A Fork In It</h1>
-//         <SearchBox searchChange={this.searchChange} submitUsersRecipe={this.submitUsersRecipe}/>
-//       </div>
-//     );
-//   }
-
-//     }
-
-// export default App;
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import styled from 'styled-components';
 import SearchBox from "./componets/SearchBox";
+import Recipe from "./componets/Recipe";
 
 const App = () => {
 
   const [recipes, setRecipes] = useState([]);
   const [searchfield, setSearchField] = useState('');
 
-  
 
   const fetchApiCall = async () => {
     const getResponse = await fetch(`https://api.edamam.com/search?q=${searchfield}&app_id=4298945d&app_key=ad5979247966b4cff1201bbc13ff7be6`);
     const data = await getResponse.json();
     setRecipes(data.hits);
+    console.log(data.hits);
   }
 
   const searchChange = event => {
@@ -70,11 +28,31 @@ const App = () => {
   }
 
     return (
-      <div>
-        <h1 id="companyName">Put A Fork In It</h1>
+      <AppWrapper>
+        <Title id="companyName">Put A Fork In It</Title>
         <SearchBox searchChange={searchChange} submitUsersRecipe={submitUsersRecipe}/>
-      </div>
+        {recipes.map( recipe => {
+          return <Recipe key={recipe.recipe.label} title={recipe.recipe.label} image={recipe.recipe.image} />
+        })}
+
+      </AppWrapper>
     );
     }
 
+
+    const AppWrapper = styled.div `
+      width: 100%;
+      box-sizing: border-box;
+      padding: 20px;
+      height: 100%;
+    `;
+
+    const Title = styled.h1 `
+      font-size: 4rem;
+      color: #fff;
+      width: 100%;
+      text-align: center;
+      padding-bottom: 20px;
+      letter-spacing: 1px;
+    `;
 export default App;
