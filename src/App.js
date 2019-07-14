@@ -31,10 +31,11 @@ const App = () => {
       <AppWrapper>
         <Title id="companyName">Put A Fork In It</Title>
         <SearchBox searchChange={searchChange} submitUsersRecipe={submitUsersRecipe}/>
-        {recipes.map( recipe => {
-          return <Recipe key={recipe.recipe.label} title={recipe.recipe.label} image={recipe.recipe.image} />
-        })}
-
+        <RecipeWrapper>
+          {recipes.map( recipe => {
+            return <Recipe key={recipe.recipe.label} title={recipe.recipe.label} image={recipe.recipe.image} />
+          })}
+        </RecipeWrapper>
       </AppWrapper>
     );
     }
@@ -55,4 +56,13 @@ const App = () => {
       padding-bottom: 20px;
       letter-spacing: 1px;
     `;
+    
+    const RecipeWrapper = styled.div `
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+    
+`;
 export default App;
