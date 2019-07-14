@@ -50,7 +50,7 @@ const App = () => {
         </RecipeWrapper>
       </AppWrapper>
 
-      <Route exact path ="/" component={App} />
+      {/* <Route exact path ="/" component={App} /> */}
       <Route path="/recipes/details" component={Details} />
 
     </Router>
