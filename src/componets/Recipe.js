@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Recipe = ({ title, image }) => {
   return (
@@ -8,7 +8,7 @@ const Recipe = ({ title, image }) => {
       <TitleHeading>{title}</TitleHeading>
       <Image src={image} />
       <ButtonWrapper>
-          <Button to="/recipe/details/">Details</Button>
+          <Button to="/recipes/details">Details</Button>
       </ButtonWrapper>
     </ContentContainer>
   );
