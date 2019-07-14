@@ -15,14 +15,19 @@ const Recipe = ({ title, image }) => {
 };
 
 const TitleHeading = styled.h2`
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   letter-spacing: 1px;
   color: #fff;
   padding: 10px 0;
+  text-transform: capitalize;
+  text-align: center;
 `;
 
 const Image = styled.img`
   width: 80%;
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 20px;
 `;
 const ContentContainer = styled.div`
   display: flex;
@@ -32,6 +37,9 @@ const ContentContainer = styled.div`
   padding: 10px;
   border: 2px solid #d6d6d6;
   margin-top: 20px;
+  width: 30%;
+  min-width: 300px;
+  min-height: 400px;
 `;
 
 const ButtonWrapper = styled.div`
