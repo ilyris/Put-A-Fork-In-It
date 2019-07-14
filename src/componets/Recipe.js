@@ -47,15 +47,16 @@ const ButtonWrapper = styled.div`
   display: flex;
   align-items: center;
   padding: 20px;
-  justify-content: center;
+  justify-content: flex-end;
 `;
 const Button = styled(Link)`
-  color: rgba(61, 1, 85, 1);
-  font-size: 2rem;
-  background-color: #fff;
-  margin-left: 50px;
-  padding: 10px 15px;
-  font-weight: 600;
-  letter-spacing: 1px;
+color: #000;
+font-size: 2rem;
+background-color: #fff;
+margin-right: 50px;
+padding: 10px 15px;
+font-weight: 600;
+letter-spacing: 1px;
+text-decoration: none;
 `;
 export default Recipe;

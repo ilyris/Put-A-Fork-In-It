@@ -5,12 +5,16 @@ import Recipe from "./Recipe";
 import React, { useState} from "react";
 
 const Home = () => {
+
+    const api_Key = process.env.REACT_APP_API_KEY;
+    const api_Id = process.env.REACT_APP_API_ID;
+
   const [recipes, setRecipes] = useState([]);
   const [searchfield, setSearchField] = useState("");
 
   const fetchApiCall = async () => {
     const getResponse = await fetch(
-      `https://api.edamam.com/search?q=${searchfield}&app_id=4298945d&app_key=ad5979247966b4cff1201bbc13ff7be6`
+      `https://api.edamam.com/search?q=${searchfield}&app_id=${api_Id}&app_key=${api_Key}`
     );
     const data = await getResponse.json();
     setRecipes(data.hits);
