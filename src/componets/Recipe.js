@@ -8,7 +8,7 @@ const Recipe = ({ title, image }, props) => {
       <TitleHeading>{title}</TitleHeading>
       <Image src={image} />
       <ButtonWrapper>
-          <Button to={{ pathname: `/recipes/${recipe.recipe_label}` }}>Details</Button>
+          <Button to={{ pathname: `/recipes/:id` }}>Details</Button>
       </ButtonWrapper>
     </ContentContainer>
   );
