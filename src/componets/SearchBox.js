@@ -19,7 +19,7 @@ const SearchBoxWrapper = styled.div `
 `;
 
 const SubmitButton = styled.button `
-    font-size: 2em;
+    font-size: 1.8rem;
     color: white;
     padding: 10px 15px;
     text-align: center;
@@ -29,11 +29,12 @@ const SubmitButton = styled.button `
     outline: none;
     margin-left: 20px;
     border-radius: 10px;
+    transition: all ease-in-out 300ms;
 `;
 
 const InputSearchField = styled.input `
     height: 100%;
-    font-size: 1.8em;
+    font-size: 1.8rem;
     padding: 10px;
     border: none;
     outline: none;

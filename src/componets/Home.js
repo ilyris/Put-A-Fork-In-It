@@ -6,8 +6,8 @@ import React, { useState} from "react";
 
 const Home = () => {
 
-    const api_Key = process.env.REACT_APP_API_KEY;
-    const api_Id = process.env.REACT_APP_API_ID;
+  const api_Key = process.env.REACT_APP_API_KEY;
+  const api_Id = process.env.REACT_APP_API_ID;
 
   const [recipes, setRecipes] = useState([]);
   const [searchfield, setSearchField] = useState("");
@@ -60,7 +60,7 @@ const AppWrapper = styled.div`
   box-sizing: border-box;
   padding: 20px;
   height: 100%;
-  background: rgba(208,64,255,1);
+  background: rgb(146, 146, 146);
 `;
 
 const Title = styled.h1`

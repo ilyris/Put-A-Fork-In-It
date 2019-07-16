@@ -21,6 +21,14 @@ html {
 body {
     font-size: 10px;
     width: 100%;
-    background: rgba(208,64,255,1);
+    background: rgb(146, 146, 146);
     background-repeat: no-repeat;
+}
+input::placeholder {
+    color: #fff;
+}
+button:hover {
+    cursor: pointer;
+    background-color: rgb(46, 206, 255);
+    color: #000;
 }
