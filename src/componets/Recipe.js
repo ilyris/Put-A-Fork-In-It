@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-const Recipe = ({ title, image }, props) => {
+const Recipe = ({ title, image, recipeArray }, props) => {
   return (
     <ContentContainer>
       <TitleHeading>{title}</TitleHeading>

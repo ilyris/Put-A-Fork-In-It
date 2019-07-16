@@ -18,7 +18,6 @@ const Home = () => {
     );
     const data = await getResponse.json();
     setRecipes(data.hits);
-    console.log(data.hits);
   };
 
   const searchChange = event => {
@@ -44,6 +43,7 @@ const Home = () => {
               key={recipe.recipe.label}
               title={recipe.recipe.label}
               image={recipe.recipe.image}
+              recipeArray={recipe.recipe}
             />
           );
         })}
