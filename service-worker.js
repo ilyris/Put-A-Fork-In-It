@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Put-A-Fork-In-It/precache-manifest.a3ad5b85f5a21767294359473d3ea94a.js"
+  "/Put-A-Fork-In-It/precache-manifest.f1bd1bd3a7853ab95b0bcf99dd47312e.js"
 );
 
 self.addEventListener('message', (event) => {

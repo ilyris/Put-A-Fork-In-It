@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Put-A-Fork-In-It/static/css/main.36497136.chunk.css",
-    "main.js": "/Put-A-Fork-In-It/static/js/main.7a13aac7.chunk.js",
-    "main.js.map": "/Put-A-Fork-In-It/static/js/main.7a13aac7.chunk.js.map",
+    "main.css": "/Put-A-Fork-In-It/static/css/main.4bdefe9b.chunk.css",
+    "main.js": "/Put-A-Fork-In-It/static/js/main.d41d00aa.chunk.js",
+    "main.js.map": "/Put-A-Fork-In-It/static/js/main.d41d00aa.chunk.js.map",
     "runtime~main.js": "/Put-A-Fork-In-It/static/js/runtime~main.fcc168da.js",
     "runtime~main.js.map": "/Put-A-Fork-In-It/static/js/runtime~main.fcc168da.js.map",
-    "static/js/2.c2695c00.chunk.js": "/Put-A-Fork-In-It/static/js/2.c2695c00.chunk.js",
-    "static/js/2.c2695c00.chunk.js.map": "/Put-A-Fork-In-It/static/js/2.c2695c00.chunk.js.map",
+    "static/js/2.d7ec6488.chunk.js": "/Put-A-Fork-In-It/static/js/2.d7ec6488.chunk.js",
+    "static/js/2.d7ec6488.chunk.js.map": "/Put-A-Fork-In-It/static/js/2.d7ec6488.chunk.js.map",
     "index.html": "/Put-A-Fork-In-It/index.html",
-    "precache-manifest.a3ad5b85f5a21767294359473d3ea94a.js": "/Put-A-Fork-In-It/precache-manifest.a3ad5b85f5a21767294359473d3ea94a.js",
+    "precache-manifest.f1bd1bd3a7853ab95b0bcf99dd47312e.js": "/Put-A-Fork-In-It/precache-manifest.f1bd1bd3a7853ab95b0bcf99dd47312e.js",
     "service-worker.js": "/Put-A-Fork-In-It/service-worker.js",
-    "static/css/main.36497136.chunk.css.map": "/Put-A-Fork-In-It/static/css/main.36497136.chunk.css.map"
+    "static/css/main.4bdefe9b.chunk.css.map": "/Put-A-Fork-In-It/static/css/main.4bdefe9b.chunk.css.map"
   }
 }
