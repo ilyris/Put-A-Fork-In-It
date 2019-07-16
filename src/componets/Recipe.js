@@ -2,13 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-const Recipe = ({ title, image }) => {
+const Recipe = ({ title, image }, props) => {
   return (
     <ContentContainer>
       <TitleHeading>{title}</TitleHeading>
       <Image src={image} />
       <ButtonWrapper>
-          <Button to="/recipes/details">Details</Button>
+          <Button to={{ pathname: `/recipes/${recipe.recipe_label}` }}>Details</Button>
       </ButtonWrapper>
     </ContentContainer>
   );

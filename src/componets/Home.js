@@ -60,6 +60,7 @@ const AppWrapper = styled.div`
   box-sizing: border-box;
   padding: 20px;
   height: 100%;
+  background: rgba(208,64,255,1);
 `;
 
 const Title = styled.h1`
