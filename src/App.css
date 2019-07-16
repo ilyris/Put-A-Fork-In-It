@@ -30,5 +30,5 @@ input::placeholder {
 button:hover {
     cursor: pointer;
     background-color: rgb(46, 206, 255);
-    color: #000;
+    color: #fff;
 }
