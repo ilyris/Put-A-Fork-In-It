@@ -26,7 +26,7 @@ const Home = () => {
 
   const submitUsersRecipe = event => {
     event.preventDefault();
-    fetchApiCall();
+    return fetchApiCall();
   };
 
   return(
