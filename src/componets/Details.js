@@ -10,7 +10,7 @@ const Details = ({match, location}) =>  {
     return  (
         <div>
             <StyledLink to="/">Home</StyledLink>
-            <H2>Your Dish: {label}</H2>
+            <H2>Recipe: {label}</H2>
             <InformationContainer>
                 <Image src={image} />
                 <Ul>{listItems}</Ul>
